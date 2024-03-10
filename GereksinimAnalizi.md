@@ -3,19 +3,19 @@ Gereksinimler
 </h1>
 <h2>
 
-1. Giriş yapma
-2. Üye olma
-3. Yorum yapma
+1. Giriş Yapma
+2. Üye Olma
+3. Yorum Yapma
 4. İçerikleri Puanlama
 5. Profil Oluşturma
-6. İçerikleri sıralama
-7. İçerik arama
-8. İçeriklerin tanıtımı/bilgileri
-9. Favori içerikleri seçme
-10. Çıkış yapma
+6. İçerikleri Sıralama
+7. İçerik Arama
+8. İçeriklerin Tanıtımı/Bilgileri
+9. Favori İçerikleri Seçme
+10. Çıkış Yapma
 11. Profili Düzenleme
-12. İçeriklerle ilgili yeni haberler
-13. Uzmanların görüşleri/puanları
+12. İçeriklerle İlgili Yeni Haberler
+13. Uzmanların Görüşleri/Puanları
 </h2>
 
 <h1>
