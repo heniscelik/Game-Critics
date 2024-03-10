@@ -11,7 +11,7 @@
 ### 1. [Proje Planı](ProjePlan.png)
 ### 2. [Gereksinim Analizi](GereksinimAnalizi.md)
 ### 3. [Durum Diyagramı](DurumDiyagramı)
-### 4. [Durum Seneryoları](DurumSenaryoları)
+### 4. [Durum Senaryoları](DurumSenaryoları)
 ### 5. [Veritabanı Diyagramı](VeritabaniDiyagrami)
 ### 6. [Front-End](Front-End)
 ### 7. [Back-End](Back-End)
