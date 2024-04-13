@@ -1,1 +1,1 @@
-[Hüseyin Enis Çelik](<../../../Desktop/Use Case Şablon.pdf>)
+[Hüseyin Enis Çelik](UseCaseSablon.pdf)
