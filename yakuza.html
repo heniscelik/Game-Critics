@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+<main>
+  <section class="oyun-detay">
+      <h2>Oyun Hakkında</h2>
+      <p>Tür: JRPG</p>
+            <p>Çıkış Tarihi: 10 Kasım 2020</p>
+            <p>Metascore: 84</p>
+      <p>Açıklama: Yakuza: Like a Dragon, Ryu Ga Gotoku Studio tarafından geliştirilen ve Sega tarafından yayınlanan, 2020 yılında PlayStation 4, Xbox One ve PC için piyasaya sürülmüş bir rol yapma video oyunudur. Yakuza serisinin sekizinci ana oyunu olan Like a Dragon, aynı zamanda serinin ilk sıra tabanlı RPG'sidir.
+        Ichiban Kasuga, Tokyo'daki düşük rütbeli bir yakuza ailesinin üyesidir. En çok saygı duyduğu adamın klanını yok ettiğini keşfettikten sonra, ailesinin ihanetinin ardındaki gerçeği öğrenmek ve hayatını geri kazanmak için bir göreve atılır. Bu yolculukta Ichiban, şehirdeki dışlananlar için beklenmedik bir kahramana dönüşür.
+        Yakuza: Like a Dragon, geleneksel Yakuza dövüş mekaniklerini sıra tabanlı RPG öğeleriyle harmanlar. Oyuncular, Yakın Muhafız, Müzisyen ve Şef gibi 19 farklı iş sınıfı arasından seçim yapabilir ve her birinin kendine özgü becerilerini ve yeteneklerini kullanabilirler.
+        Yakuza: Like a Dragon, hem yeni gelenler hem de serinin hayranları için keyifli bir deneyim sunan, benzersiz ve yenilikçi bir RPG'dir. Sıra tabanlı dövüşleri, sürükleyici hikayesi ve unutulmaz karakterleri ile Like a Dragon, 2020'nin en iyi oyunlarından biri olarak kabul edilir.</p>
+  </section>
+  <section class="ekran-goruntuleri">
+      <h2>Ekran Görüntüleri</h2>
+      <img src="images/yakuza.jpg" alt="Oyun 1 Ekran Görüntüsü 1">
+  </section>
+  <section class="yorum-puan">
+      <h2>Yorum Yap ve Puan Ver</h2>
+      <form id="yorum-formu">
+          <label for="isim">İsim:</label>
+          <input type="text" id="isim" name="isim" required>
+          
+          <label for="yorum">Yorum:</label>
+          <textarea id="yorum" name="yorum" required></textarea>
+          
+          <label for="puan">Puan:</label>
+          <select id="puan" name="puan" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          
+          <button type="submit">Gönder</button>
+      </form>
+      <div id="yorumlar">
+          <h3>Yorumlar</h3>
+          <ul id="yorum-listesi">
+              <!-- Yorumlar burada görünecek -->
+          </ul>
+      </div>
+  </section>
+  <a href="index.html">Geri Dön</a>
+</main>
+<script src="oyundetay.js"></script>
+</body>
+</html>
+</body>
+</html>

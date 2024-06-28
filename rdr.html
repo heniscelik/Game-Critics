@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+<main>
+  <section class="oyun-detay">
+      <h2>Oyun Hakkında</h2>
+      <p>Tür: Açık Dünya/Aksiyon</p>
+            <p>Çıkış Tarihi: 26 Ekim 2018</p>
+            <p>Metascore: 97</p>
+      <p>Açıklama: Red Dead Redemption 2, Rockstar Games tarafından geliştirilen ve yayımlanan, 2018 aksiyon-macera temalı video oyunu. Red Dead serisinin üçüncü oyunu oldu ve 2010 Red Dead Redemption oyununun bir prequelidir. Hikâye, 1899'da Batı, Ortabatı ve Güney ABD'nın kurgusal bir temsilinde geçmektedir. Oyuncu, oyunun başlarında Van der Linde çetesinin bir üyesi olan kanun kaçağı Arthur Morgan'ı oynamaktadır; sonsözde ise yine çetenin bir üyesi olmuş ancak sonradan çete ile yollarını ayırmış John Marston'ı oynamaktadır, John Marston karakterinin yaşam hikâyesi ise serinin ilk oyunu Red Dead Redemption'de devam eder.
+
+        Oyun, hem birinci hem de üçüncü şahıs bakış açısıyla sunulur ve oyuncu, interaktif açık dünyasında özgürce dolaşabilir. Oynanış öğeleri arasında çatışmalar, soygunlar, avlanma, ata binme, oyuncu olmayan karakterlerle etkileşim, ahlaki seçimler ve eylemler yoluyla karakterin onur derecesini yükseltip azaltma yer alır.
+        
+        Red Dead Redemption 2 bir açık dünya oyunudur. Oyunda geçen zaman çetelerin ve silahlı soyguncuların yaşadığı Vahşi Batı döneminin son zamanlarıdır.
+        
+        Ana karakter Arthur Morgan üçüncü ve birinci şahıs bakış açısıyla kontrol edilebilmektedir. Oyun tek oyunculu ve çok oyunculu modları içermektedir.
+        
+        Oyun Red Dead Redemption oyunundan kalan honor (şeref) sistemini kullanmaya devam etti. Bu sistem oyuncunun kontrol ettiği karakterin diğer NPC'ler ile nasıl ilişki kuracağını ve bu ilişkilerin yerleşim yerleri, kasabalar ve diğer gruplar tarafından nasıl tepki göreceğini belirlemektedir.</p>
+      
+  </section>
+  <section class="ekran-goruntuleri">
+      <h2>Ekran Görüntüleri</h2>
+      <img src="images/rdr.jpg" alt="Oyun 1 Ekran Görüntüsü 1">
+  </section>
+  <section class="yorum-puan">
+      <h2>Yorum Yap ve Puan Ver</h2>
+      <form id="yorum-formu">
+          <label for="isim">İsim:</label>
+          <input type="text" id="isim" name="isim" required>
+          
+          <label for="yorum">Yorum:</label>
+          <textarea id="yorum" name="yorum" required></textarea>
+          
+          <label for="puan">Puan:</label>
+          <select id="puan" name="puan" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          
+          <button type="submit">Gönder</button>
+      </form>
+      <div id="yorumlar">
+          <h3>Yorumlar</h3>
+          <ul id="yorum-listesi">
+              <!-- Yorumlar burada görünecek -->
+          </ul>
+      </div>
+  </section>
+  <a href="index.html">Geri Dön</a>
+</main>
+<script src="oyundetay.js"></script>
+</body>
+</html>
+</body>
+</html>

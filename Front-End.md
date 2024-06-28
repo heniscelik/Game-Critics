@@ -1,0 +1,1 @@
+# Herhangi bir frontend çatısı kullanılmamışıtr , proje yetişmedi o yüzden istediğimi yapamadım ve geçici şeyler ekledim .Ancak bu süreçte çok şey öğrendim, teşekkürler hocam.

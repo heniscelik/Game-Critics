@@ -1,0 +1,1 @@
+# Docker kullanılmadı , REST API kullanılmaya çalışıldı :D

@@ -1,0 +1,74 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+            <a href="#">Game Critics</a>
+              </div>
+         <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="oyunlar.html">Oyunlar</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="yorum.html">Yorum</a></li>
+            <input type="text" placeholder="Arama..">
+          </ul>
+        </div>
+    </div>
+    <main>
+        <section class="oyun-detay">
+            <h2>Oyun Hakkında</h2>
+            <p>Tür: 2D Platform</p>
+            <p>Çıkış Tarihi: 25 Ocak 2018</p>
+            <p>Metascore: 92</p>
+            <p>Açıklama: Celeste, Madeline isimli karşısındaki çeşitli engelleri aşarak bir dağın zirvesine ulaşmaya çalışan bir kızı kontrol ettiğimiz bir platform oyunudur. Karakter zıplayabilen ve duvarlara tırmanabilen Madeline, ayrıca havada 8 farklı yöne sıçrayabilen bir yeteneğe sahiptir. Bu hareket zemine ayak basarak veya yenileyici kristallere vurarak yenilenmediği sürece bir kere yapılabilir. Oyunun 6. bölümü olan "Yansıma" 'nın sonunda Madeline çift sıçrama yeteneğini açar. Her seviyede oyuncu ilave bir mekanikle karşılaşır; oyuncuyu yukarı fırlatan yaylar, kısa bir uçuş gerçekleştiren tüyler ve dikenler gibi ölümcül nesneler bulunur (öldüğünüzde odanın başlangıcında dirilirsiniz). Oyuncular ayrıca yetenekleri ve oyunun fiziğini değiştiren bir yardım moduna da erişebilir. Bunlardan bazıları: Sonsuz hava sıçrayışı, ölümsüzlük, oyunun hızını düşürme... Bölümlerin çoğunda topladığınız sayıya göre oyunun sonunu etkileyen zorlu parkur ve bulmacalar içeren çilekler bulunur. Ek olarak her bölümde gizlenmiş aynı bölümün daha zoruna ulaşmanızı sağlayan "B-Tarafı" 'nı açan kasetler bulunur. Bütün B-Tarafları'nı tamamladığınızda ise bölümlerin çok daha zor ama kısa varyasyonlarını içeren C-Tarafları'nı açar. Bütün C-Taraflarını bitirirseniz de Altın Çilekler'e erişebilirsiniz.
+
+                Celeste, Kanadalı oyun tasarımcıları Maddy Thorson ve Noel Berry tarafından geliştirilmiş bir platform video oyunudur. Oyun bir Game Jam için prototip olarak dört günde hazırlanmış, sonrasında ise tam bir oyuna çevirme kararı alınmıştır. Celeste aynı zamanda "2018 Yılının En İyi Indie Oyunu" ödülünü kazanmıştır. Celeste Ocak 2018'de Microsoft Windows, MacOS, Linux, PlayStation 4, Xbox One ve Nintendo Switch için yayımlanmıştır.</p>
+        </section>
+        <section class="ekran-goruntuleri">
+            <h2>Ekran Görüntüleri</h2>
+            <img src="images/celeste.png" alt="Oyun 1 Ekran Görüntüsü 1">
+        </section>
+        <section class="yorum-puan">
+            <h2>Yorum Yap ve Puan Ver</h2>
+            <form id="yorum-formu">
+                <label for="isim">İsim:</label>
+                <input type="text" id="isim" name="isim" required>
+                
+                <label for="yorum">Yorum:</label>
+                <textarea id="yorum" name="yorum" required></textarea>
+                
+                <label for="puan">Puan:</label>
+                <select id="puan" name="puan" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                
+                <button type="submit">Gönder</button>
+            </form>
+            <div id="yorumlar">
+                <h3>Yorumlar</h3>
+                <ul id="yorum-listesi">
+                    <!-- Yorumlar burada görünecek -->
+                </ul>
+            </div>
+        </section>
+        <a href="index.html">Geri Dön</a>
+    </main>
+    <script src="oyundetay.js"></script>
+</body>
+</html>

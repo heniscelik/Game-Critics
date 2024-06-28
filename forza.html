@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+<main>
+  <section class="oyun-detay">
+      <h2>Oyun Hakkında</h2>
+      <p>Tür: Yarış Simülasyonu</p>
+            <p>Çıkış Tarihi: 5 Kasım 2021</p>
+            <p>Metascore: 92</p>
+      <p>Açıklama: Forza Horizon 5 Meksika'da geçen açık dünya bir yarış oyunudur. Oyun, tüm Forza Horizon serisindeki en büyük haritaya (Forza Horizon 4'ten %50 daha büyük) ve en yüksek tepe noktasına sahiptir. Harita, yaratıcı yönetmen Mike Brown tarafından ekibin oluşturduğu en çeşitli Forza Horizon haritalarından biri olarak tanımlanmıştır. Harita, aktif bir kaldera yanardağı, ormanlar ve plajlar, antik Maya tapınakları ve Guanajuato gibi şehirleri içerir. Oyuncular açık dünyayı özgürce keşfedebilir, çok oyunculu yarışlarda rekabet edebilir ve hikâye modunu oynayabilirler. Hem oyunda yer alan arabalar hem de oyuncu karakterleri detaylı bir şekilde özelleştirilebilmektedir. Oyun, seride arabalarda ışın izlemeyi destekleyen ilk oyundur. (Işın izleme yalnızca ForzaVista'da mevcuttur)
+
+        Oyun, oyuncuların gözle görülür bir fırtına görebilecekleri yeni bir hava durumu sistemi (yerel hava durumu) sunmaktadır. Meksika, geniş bir rakım aralığına sahip çok geniş bir ülke olduğundan, oyunda aynı anda birden fazla iklim ortaya çıkacaktır. Dört mevsim halen mevcut ancak haritanın dört bir köşesinde farklı etkileri olacak. Örneğin, kurak mevsimde toz fırtınaları ortaya çıkarken, tropik fırtınalar sonbahar mevsimi boyunca meydana gelecek. Bir başka detay da ormanda olacak, ortamın artık havaya tepki verecek. Mesela her yerde yapraklar uçuşacak.
+        
+        Forza Horizon 5, Playground Games tarafından geliştirilen ve Xbox Game Studios tarafından yayınlanan bir yarış oyunudur. Forza serisindeki beşinci Forza Horizon oyunu ve on ikinci Forza oyunu olacaktır. Oyun, Meksika'nın kurgusal bir temsilinde geçmektedir. 9 Kasım 2021'de Microsoft Windows, Xbox One ve Xbox Series X ve S için piyasaya sürüldü.</p>
+     
+  </section>
+  <section class="ekran-goruntuleri">
+      <h2>Ekran Görüntüleri</h2>
+      <img src="images/forza.jpg" alt="Oyun 1 Ekran Görüntüsü 1">
+  </section>
+  <section class="yorum-puan">
+      <h2>Yorum Yap ve Puan Ver</h2>
+      <form id="yorum-formu">
+          <label for="isim">İsim:</label>
+          <input type="text" id="isim" name="isim" required>
+          
+          <label for="yorum">Yorum:</label>
+          <textarea id="yorum" name="yorum" required></textarea>
+          
+          <label for="puan">Puan:</label>
+          <select id="puan" name="puan" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          
+          <button type="submit">Gönder</button>
+      </form>
+      <div id="yorumlar">
+          <h3>Yorumlar</h3>
+          <ul id="yorum-listesi">
+              <!-- Yorumlar burada görünecek -->
+          </ul>
+      </div>
+  </section>
+  <a href="index.html">Geri Dön</a>
+</main>
+<script src="oyundetay.js"></script>
+</body>
+</html>
+</body>
+</html>

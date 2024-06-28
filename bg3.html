@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+
+<main>
+  <section class="oyun-detay">
+      <h2>Oyun Hakkında</h2>
+      <p>Tür: RPG</p>
+            <p>Çıkış Tarihi: 3 Ağustos 2023</p>
+            <p>Metascore: 96</p>
+      <p>Baldur's Gate 3, Larian Studios tarafından geliştirilen ve yayınlanan bir rol yapma video oyunudur. Dungeons & Dragons masaüstü rol yapma sistemine dayanan Baldur's Gate serisinin üçüncü ana oyunudur. Oyunun kısmi bir sürümü 6 Ekim 2020'de macOS, Windows ve Stadia yayın hizmeti için erken erişim formatında yayınlandı. Oyun, 3 Ağustos 2023'te Windows'ta tam sürümüne kadar erken erişimde kaldı. macOS ve PlayStation 5 sürümlerinin 6 Eylül 2023'te ve çıkış tarihi bilinmeyen bir Xbox Series X/S portunda yayınlanması planlanıyor. Stadia sürümü, Stadia'nın kapanmasının ardından iptal edildi. Oyun yayınlandıktan sonra eleştirmenlerin beğenisini kazandı.</p>
+      
+  </section>
+  <section class="ekran-goruntuleri">
+      <h2>Ekran Görüntüleri</h2>
+      <img src="images/baldursgate.jpg" alt="Oyun 1 Ekran Görüntüsü 1">
+  </section>
+  <section class="yorum-puan">
+      <h2>Yorum Yap ve Puan Ver</h2>
+      <form id="yorum-formu">
+          <label for="isim">İsim:</label>
+          <input type="text" id="isim" name="isim" required>
+          
+          <label for="yorum">Yorum:</label>
+          <textarea id="yorum" name="yorum" required></textarea>
+          
+          <label for="puan">Puan:</label>
+          <select id="puan" name="puan" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          
+          <button type="submit">Gönder</button>
+      </form>
+      <div id="yorumlar">
+          <h3>Yorumlar</h3>
+          <ul id="yorum-listesi">
+              <!-- Yorumlar burada görünecek -->
+          </ul>
+      </div>
+  </section>
+  <a href="index.html">Geri Dön</a>
+</main>
+<script src="oyundetay.js"></script>
+</body>
+</html>
+</body>
+</html>

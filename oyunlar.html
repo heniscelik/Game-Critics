@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+    <button onclick="sirala()">Puanına Göre Sırala</button>
+    
+    <ul id="oyun-listesi" class="oyun-listesi">
+        <li data-puan="92">
+            <h2><a href="witcher.html">The Witcher 3: Wild Hunt</a></h2>
+            <p>Tür: Aksiyon/RPG</p>
+            <p>Çıkış Tarihi: 19 Mayıs 2015</p>
+            <p>Metascore: 92</p>
+        </li>
+        <li data-puan="97">
+            <h2><a href="rdr.html">Red Dead Redemption 2</a></h2>
+            <p>Tür: Açık Dünya/Aksiyon</p>
+            <p>Çıkış Tarihi: 26 Ekim 2018</p>
+            <p>Metascore: 97</p>
+        </li>
+        <li data-puan="94">
+            <h2><a href="gow.html">God of War</a></h2>
+            <p>Tür: Aksiyon/Macera</p>
+            <p>Çıkış Tarihi: 20 Nisan 2018</p>
+            <p>Metascore: 94</p>
+        </li>
+        <li data-puan="96">
+            <h2><a href="bg3.html">Baldur's Gate 3</a></h2>
+            <p>Tür: RPG</p>
+            <p>Çıkış Tarihi: 3 Ağustos 2023</p>
+            <p>Metascore: 96</p>
+        </li>
+        <li data-puan="92">
+            <h2><a href="celeste.html">Celeste</a></h2>
+            <p>Tür: 2D Platform</p>
+            <p>Çıkış Tarihi: 25 Ocak 2018</p>
+            <p>Metascore: 92</p>
+        </li>
+        <li data-puan="96">
+            <h2><a href="eldenring.html">Elden Ring</a></h2>
+            <p>Tür: Aksiyon/RPG</p>
+            <p>Çıkış Tarihi: 25 Şubat 2022</p>
+            <p>Metascore: 96</p>
+        </li>
+        <li data-puan="75">
+            <h2><a href="fifa.html">EA Sports FC 24</a></h2>
+            <p>Tür: Futbol Simülasyonu</p>
+            <p>Çıkış Tarihi: 29 Eylül 2023</p>
+            <p>Metascore: 75</p>
+        </li>
+        <li data-puan="92">
+            <h2><a href="forza.html">Forza Horizon 5</a></h2>
+            <p>Tür: Yarış Simülasyonu</p>
+            <p>Çıkış Tarihi: 5 Kasım 2021</p>
+            <p>Metascore: 92</p>
+        </li>
+        <li data-puan="85">
+            <h2><a href="inscryption.html">Inscryption</a></h2>
+            <p>Tür: Kart Düellosu</p>
+            <p>Çıkış Tarihi: 19 Ekim 2021</p>
+            <p>Metascore: 85</p>
+        </li>
+        <li data-puan="83">
+            <h2><a href="mk11.html">Mortal Kombat 1</a></h2>
+            <p>Tür: 2D Dövüş</p>
+            <p>Çıkış Tarihi: 19 Eylül 2023</p>
+            <p>Metascore: 83</p>
+        </li>
+        <li data-puan="84">
+            <h2><a href="yakuza.html">Yakuza Like a Dragon</a></h2>
+            <p>Tür: JRPG</p>
+            <p>Çıkış Tarihi: 10 Kasım 2020</p>
+            <p>Metascore: 84</p>
+        </li>
+        <li data-puan="97">
+            <h2><a href="zelda.html">The Legend of Zelda:Breath of the Wild</a></h2>
+            <p>Tür: Açık Dünya/ Aksiyon</p>
+            <p>Çıkış Tarihi: 3 Mart 2017</p>
+            <p>Metascore: 97</p>
+        </li>
+    </ul>
+    <script src="sort.js"></script>
+</body>
+</html>

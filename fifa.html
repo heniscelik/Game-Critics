@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+<main>
+  <section class="oyun-detay">
+      <h2>Oyun Hakkında</h2>
+      <p>Tür: Futbol Simülasyonu</p>
+            <p>Çıkış Tarihi: 29 Eylül 2023</p>
+            <p>Metascore: 75</p>
+      <p>Açıklama: EA Sports FC 24 yeni bir futbol video oyunudur. EA Vancouver ve EA Romania tarafından geliştirildi ve EA Sports tarafından yayınlandı. EA'nın FIFA ile ortaklığının sona ermesinin ardından EA Sports FC serisinin açılış oyunu olarak EA Sports tarafından geliştirilen oyun, 29 Eylül 2023 tarihinde Nintendo Switch, PlayStation 4, PlayStation 5, Windows, Xbox One ve Xbox Series X/S için dünya çapında piyasaya sürülmüştür. Oyunda bir önceki HyperMotion 2 teknolojisinin bir üst versiyonu HyperMotionV teknolojisi kullanıyor.
+
+        PlayStation 5, Xbox Series X|S ve oyunun bilgisayar sürümleri çapraz platform aracılığıyla oynanabilecektir. PlayStation 4 ve Xbox One sürümlerinin çapraz platformda oynanabilecek. Oyunun Nintendo Switch sürümü ise çapraz platform desteklememektedir.
+        
+        Oyunun tanıtım filminde FIFA 14'te kullanılan müziklerden birisi olan Love Me Again kullanıldı.</p>
+  </section>
+  <section class="ekran-goruntuleri">
+      <h2>Ekran Görüntüleri</h2>
+      <img src="images/fifa.jpg" alt="Oyun 1 Ekran Görüntüsü 1">
+  </section>
+  <section class="yorum-puan">
+      <h2>Yorum Yap ve Puan Ver</h2>
+      <form id="yorum-formu">
+          <label for="isim">İsim:</label>
+          <input type="text" id="isim" name="isim" required>
+          
+          <label for="yorum">Yorum:</label>
+          <textarea id="yorum" name="yorum" required></textarea>
+          
+          <label for="puan">Puan:</label>
+          <select id="puan" name="puan" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          
+          <button type="submit">Gönder</button>
+      </form>
+      <div id="yorumlar">
+          <h3>Yorumlar</h3>
+          <ul id="yorum-listesi">
+              <!-- Yorumlar burada görünecek -->
+          </ul>
+      </div>
+  </section>
+  <a href="index.html">Geri Dön</a>
+</main>
+<script src="oyundetay.js"></script>
+</body>
+</html>
+</body>
+</html>

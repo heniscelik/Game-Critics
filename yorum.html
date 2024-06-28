@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+    <title>Yorum Yap</title>
+</head>
+<body>
+    <h1>Yorum Yap</h1>
+    <div class="yorum">
+        <label for="comment">Yorumunuz:</label>
+        <textarea id="comment" placeholder="Yorumunuzu yazın"></textarea>
+        <button onclick="yorumYap()">Yorum Yap</button>
+    </div>
+    <div id="yorumlar">
+        <h2>Yorumlar</h2>
+    </div>
+    <script>
+        async function yorumYap() {
+            const comment = document.getElementById('comment').value;
+            const userName = localStorage.getItem('userName');
+            if (comment && userName) {
+                const response = await fetch('http://localhost:3000/api/comment', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userName, comment })
+                });
+                if (response.ok) {
+                    const newComment = await response.json();
+                    const yorumlarDiv = document.getElementById('yorumlar');
+                    const yeniYorum = document.createElement('div');
+                    yeniYorum.innerHTML = `<strong>${newComment.userName}:</strong> ${newComment.comment}`;
+                    yorumlarDiv.appendChild(yeniYorum);
+                    document.getElementById('comment').value = ''; // Yorum alanını temizle
+                } else {
+                    alert('Yorum yaparken bir hata oluştu.');
+                }
+            } else {
+                alert('Lütfen profil sayfasından adınızı kaydedin ve yorumunuzu yazın.');
+            }
+        }
+
+        // Sayfa yüklendiğinde, kaydedilen adın olup olmadığını kontrol et
+        document.addEventListener('DOMContentLoaded', async () => {
+            const response = await fetch('http://localhost:3000/api/comments');
+            const comments = await response.json();
+            const yorumlarDiv = document.getElementById('yorumlar');
+            comments.forEach(comment => {
+                const yeniYorum = document.createElement('div');
+                yeniYorum.innerHTML = `<strong>${comment.userName}:</strong> ${comment.comment}`;
+                yorumlarDiv.appendChild(yeniYorum);
+            });
+        });
+    </script>
+</body>
+</html>

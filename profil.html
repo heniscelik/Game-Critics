@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+<style>
+  .profil {
+      margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+<h1>Profil</h1>
+<div class="profil">
+  <label for="name">Adınızı Girin:</label>
+  <input type="text" id="name" placeholder="Adınız">
+  <button onclick="kaydetAd()">Kaydet</button>
+</div>
+<script>
+  async function kaydetAd() {
+      const name = document.getElementById('name').value;
+      if (name) {
+          const response = await fetch('http://localhost:3000/api/profile', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ name })
+          });
+          if (response.ok) {
+              alert('Adınız kaydedildi!');
+          } else {
+              alert('Adınızı kaydederken bir hata oluştu.');
+          }
+      } else {
+          alert('Lütfen adınızı girin.');
+      }
+  }
+</script>
+</body>
+</html>

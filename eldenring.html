@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="#">Game Critics</a>
+          </div>
+     <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="oyunlar.html">Oyunlar</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="yorum.html">Yorum</a></li>
+        <input type="text" placeholder="Arama..">
+      </ul>
+    </div>
+</div>
+<main>
+  <section class="oyun-detay">
+      <h2>Oyun Hakkında</h2>
+      <p>Tür: Aksiyon/RPG</p>
+            <p>Çıkış Tarihi: 25 Şubat 2022</p>
+            <p>Metascore: 96</p>
+      <p>Açıklama: Elden Ring, E3 2019 fuarında duyurulan ve geliştirmesi hala devam etmekte olan bir aksiyon-rol yapma oyunudur. Oyun, FromSoftware tarafından geliştirilmektedir ve yayımcılığını Bandai Namco Entertainment üstlenmektedir; Microsoft Windows, PlayStation 4 ve Xbox One platformlarında çıkış yapacaktır. Oyunun yönetmenliğini Souls serisi, Bloodborne ve Sekiro: Shadows Die Twice gibi oyunlar ile tanınan Hidetaka Miyazaki üstlenmektedir, oyunun dünyasını ise özellikle Buz ve Ateşin Şarkısı kitabı ile tanınan fantezi yazarı George R. R. Martin yaratmıştır. George R. R. Martin'in çalışmalarının büyük bir hayranı olan Hidetaka Miyazaki, Martin ile iletişime geçmiş ve oyunun dünyasını oluşturması için kendisine kreatif özgürlük tanımıştır. Miyazaki, IGN için verdiği bir röportajda, oyunun isminin anlamının sorulması üzerine "Yüzüklerin Efendisi en klasik fantezi romanı, bundan dolayı Elden Ring bu romandan belli bir miktarda esinlenilerek ama tamamen aynısı olmayacak şekilde yapıldı." dedi ve Elden Ring ismindeki "Ring" kelimesinin aslında parmağa takılan bir yüzük anlamına gelmediğini, "yuvarlak" anlamına geldiğini belirtti.
+
+        Elden Ring'in geliştirilmesine 2017'nin başlarında, Dark Souls III için geliştirilen The Ringed City indirilebilir içeriğinin yayımlanmasının hemen ardından başlandı. Diğer Souls oyunlarında olduğu gibi, Elden Ring sabit bir ana karakter ile oynamak yerine oyunculara kendi ana karakterlerini yaratabilme özelliğini tanıyacak. Oyun, her ne kadar ana mantığını Souls serisinden alacak olsa da, diğer Souls oyunlarının aksine, oyuncu olmayan karakterlerin (Npc) çok fazla bulunmadığı, zindan benzeri harabeler içeren daha büyük bir açık dünya, at sürme ve at üstünde savaş gibi yeni özelliklere sahip olacak.Miyazaki'ye hikâyenin kitaplaştırılma ihtimali sorulduğunda kendisi, oyuncuların oyunu oynayarak hikâyeyi öğrenmelerini ve deneyim etmelerini tercih ettiğini söylemiştir. Oyunun müzikleri, daha önce de Miyazaki tarafından geliştirilen oyunların birçoğunda bestecilik yapan Yuka Kitamura tarafından bestelenmektedir.
+        Elden Ring FromSoftware tarafından geliştirilmiş olan ve Bandai Namco Entertainment tarafından yayınlanmış olan yeni bir aksiyon-rol yapma oyunudur. Oyun, oyun yönetmeni Hidetaka Miyazaki ve fantezi yazarı George R. R. Martin'in ortak çalıştıkları bir projedir ve Microsoft Windows, PlayStation 4-5, Xbox One ve Steam Deck platformlarında 24 Şubat 2022 tarihinde çıkış yapmıştır. Elden Ring, The Game Awards 2022'de yılın oyunu ödülünü aldı..</p>
+      
+  </section>
+  <section class="ekran-goruntuleri">
+      <h2>Ekran Görüntüleri</h2>
+      <img src="images/eldenring.jpg" alt="Oyun 1 Ekran Görüntüsü 1">
+  </section>
+  <section class="yorum-puan">
+      <h2>Yorum Yap ve Puan Ver</h2>
+      <form id="yorum-formu">
+          <label for="isim">İsim:</label>
+          <input type="text" id="isim" name="isim" required>
+          
+          <label for="yorum">Yorum:</label>
+          <textarea id="yorum" name="yorum" required></textarea>
+          
+          <label for="puan">Puan:</label>
+          <select id="puan" name="puan" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          
+          <button type="submit">Gönder</button>
+      </form>
+      <div id="yorumlar">
+          <h3>Yorumlar</h3>
+          <ul id="yorum-listesi">
+              <!-- Yorumlar burada görünecek -->
+          </ul>
+      </div>
+  </section>
+  <a href="index.html">Geri Dön</a>
+</main>
+<script src="oyundetay.js"></script>
+</body>
+</html>
+</body>
+</html>
