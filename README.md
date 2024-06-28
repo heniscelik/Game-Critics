@@ -4,7 +4,7 @@
 
 ## Projenin kategorisi "Eğlence ve Oyunlar" dır.
 ## Referans uygulaması [metacritic.com](https://www.metacritic.com) 'dur.  
-## Uygulama adresi [](https://game-critics.vercel.app/).  
+## Uygulama adresi [https://game-critics.vercel.app/ ](https://game-critics.vercel.app/).  
 ## Projeyi yapan grubun adı "HEÇ" 'dir. (1 kişilik bir gruptur)  
 ## Proje ekibindeki kişi/kişiler : Hüseyin Enis Çelik   
 
