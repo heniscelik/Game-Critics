@@ -1,1 +1,1 @@
-# Docker kullanılmadı , REST API kullanılmaya çalışıldı :D
+# Docker kullanılmadı , REST API kullanılmaya çalışıldı :C
